@@ -1,0 +1,467 @@
+[gd_scene load_steps=7 format=3 uid="uid://bq2egk01vv0g2"]
+
+[ext_resource type="Script" path="res://game_scene.gd" id="1_7r4c5"]
+[ext_resource type="AudioStream" uid="uid://gevukt7em14d" path="res://keys/C2.mp3" id="2_quybt"]
+[ext_resource type="Texture2D" uid="uid://gukn8eitusqq" path="res://art/49keys.jpeg" id="3_mlyb7"]
+[ext_resource type="Texture2D" uid="uid://bepfdxiu6if6l" path="res://art/KeyPress.png" id="4_qw5af"]
+[ext_resource type="Texture2D" uid="uid://c1abre1yj3dl6" path="res://art/BlackKey.png" id="5_qmfrd"]
+[ext_resource type="Texture2D" uid="uid://cksxugrd2icku" path="res://art/background.PNG" id="6_1homj"]
+
+[node name="GameScene" type="Node2D"]
+script = ExtResource("1_7r4c5")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_quybt")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+offset = Vector2(0, -100)
+zoom = Vector2(0.75, 0.75)
+
+[node name="Piano" type="Sprite2D" parent="."]
+position = Vector2(0, 100)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("3_mlyb7")
+
+[node name="BlackKeys" type="Node2D" parent="."]
+
+[node name="BlackKey" type="Sprite2D" parent="BlackKeys"]
+z_index = 1
+position = Vector2(-505, 62)
+scale = Vector2(0.781251, 0.715)
+texture = ExtResource("5_qmfrd")
+
+[node name="BlackKey2" type="Sprite2D" parent="BlackKeys"]
+z_index = 1
+position = Vector2(-458.5, 62)
+scale = Vector2(0.781251, 0.715)
+texture = ExtResource("5_qmfrd")
+
+[node name="BlackKey3" type="Sprite2D" parent="BlackKeys"]
+z_index = 1
+position = Vector2(-394, 62)
+scale = Vector2(0.781251, 0.715)
+texture = ExtResource("5_qmfrd")
+
+[node name="BlackKey4" type="Sprite2D" parent="BlackKeys"]
+z_index = 1
+position = Vector2(-352, 62)
+scale = Vector2(0.781251, 0.715)
+texture = ExtResource("5_qmfrd")
+
+[node name="BlackKey5" type="Sprite2D" parent="BlackKeys"]
+z_index = 1
+position = Vector2(-311, 62)
+scale = Vector2(0.781251, 0.715)
+texture = ExtResource("5_qmfrd")
+
+[node name="BlackKey6" type="Sprite2D" parent="BlackKeys"]
+z_index = 1
+position = Vector2(-247, 62)
+scale = Vector2(0.781251, 0.715)
+texture = ExtResource("5_qmfrd")
+
+[node name="BlackKey7" type="Sprite2D" parent="BlackKeys"]
+z_index = 1
+position = Vector2(-201, 62)
+scale = Vector2(0.781251, 0.715)
+texture = ExtResource("5_qmfrd")
+
+[node name="BlackKey8" type="Sprite2D" parent="BlackKeys"]
+z_index = 1
+position = Vector2(-136, 62)
+scale = Vector2(0.781251, 0.715)
+texture = ExtResource("5_qmfrd")
+
+[node name="BlackKey9" type="Sprite2D" parent="BlackKeys"]
+z_index = 1
+position = Vector2(-94, 62)
+scale = Vector2(0.781251, 0.715)
+texture = ExtResource("5_qmfrd")
+
+[node name="BlackKey10" type="Sprite2D" parent="BlackKeys"]
+z_index = 1
+position = Vector2(-53, 62)
+scale = Vector2(0.781251, 0.715)
+texture = ExtResource("5_qmfrd")
+
+[node name="BlackKey11" type="Sprite2D" parent="BlackKeys"]
+z_index = 1
+position = Vector2(11, 62)
+scale = Vector2(0.781251, 0.715)
+texture = ExtResource("5_qmfrd")
+
+[node name="BlackKey12" type="Sprite2D" parent="BlackKeys"]
+z_index = 1
+position = Vector2(57, 62)
+scale = Vector2(0.781251, 0.715)
+texture = ExtResource("5_qmfrd")
+
+[node name="BlackKey13" type="Sprite2D" parent="BlackKeys"]
+z_index = 1
+position = Vector2(121, 62)
+scale = Vector2(0.781251, 0.715)
+texture = ExtResource("5_qmfrd")
+
+[node name="BlackKey14" type="Sprite2D" parent="BlackKeys"]
+z_index = 1
+position = Vector2(164, 62)
+scale = Vector2(0.781251, 0.715)
+texture = ExtResource("5_qmfrd")
+
+[node name="BlackKey15" type="Sprite2D" parent="BlackKeys"]
+z_index = 1
+position = Vector2(205, 62)
+scale = Vector2(0.781251, 0.715)
+texture = ExtResource("5_qmfrd")
+
+[node name="BlackKey16" type="Sprite2D" parent="BlackKeys"]
+z_index = 1
+position = Vector2(269, 62)
+scale = Vector2(0.781251, 0.715)
+texture = ExtResource("5_qmfrd")
+
+[node name="BlackKey17" type="Sprite2D" parent="BlackKeys"]
+z_index = 1
+position = Vector2(314, 62)
+scale = Vector2(0.781251, 0.715)
+texture = ExtResource("5_qmfrd")
+
+[node name="BlackKey18" type="Sprite2D" parent="BlackKeys"]
+z_index = 1
+position = Vector2(380, 62)
+scale = Vector2(0.781251, 0.715)
+texture = ExtResource("5_qmfrd")
+
+[node name="BlackKey19" type="Sprite2D" parent="BlackKeys"]
+z_index = 1
+position = Vector2(422, 62)
+scale = Vector2(0.781251, 0.715)
+texture = ExtResource("5_qmfrd")
+
+[node name="BlackKey20" type="Sprite2D" parent="BlackKeys"]
+z_index = 1
+position = Vector2(462, 62)
+scale = Vector2(0.781251, 0.715)
+texture = ExtResource("5_qmfrd")
+
+[node name="KeyPress" type="Node2D" parent="."]
+
+[node name="WhiteKeyPress36" type="Sprite2D" parent="KeyPress"]
+modulate = Color(1, 1, 1, 0.388235)
+position = Vector2(-518.625, 100)
+scale = Vector2(4.40625, 13.4688)
+texture = ExtResource("4_qw5af")
+
+[node name="WhiteKeyPress37" type="Sprite2D" parent="KeyPress"]
+modulate = Color(1, 1, 1, 0.388235)
+z_index = 2
+position = Vector2(-505, 61)
+scale = Vector2(3.25, 8.9375)
+texture = ExtResource("4_qw5af")
+
+[node name="WhiteKeyPress38" type="Sprite2D" parent="KeyPress"]
+modulate = Color(1, 1, 1, 0.388235)
+position = Vector2(-483, 100)
+scale = Vector2(4.40625, 13.4688)
+texture = ExtResource("4_qw5af")
+
+[node name="WhiteKeyPress39" type="Sprite2D" parent="KeyPress"]
+modulate = Color(1, 1, 1, 0.388235)
+z_index = 2
+position = Vector2(-459, 61)
+scale = Vector2(3.25, 8.9375)
+texture = ExtResource("4_qw5af")
+
+[node name="WhiteKeyPress40" type="Sprite2D" parent="KeyPress"]
+modulate = Color(1, 1, 1, 0.388235)
+position = Vector2(-446, 100)
+scale = Vector2(4.40625, 13.4688)
+texture = ExtResource("4_qw5af")
+
+[node name="WhiteKeyPress41" type="Sprite2D" parent="KeyPress"]
+modulate = Color(1, 1, 1, 0.388235)
+position = Vector2(-409, 100)
+scale = Vector2(4.40625, 13.4688)
+texture = ExtResource("4_qw5af")
+
+[node name="WhiteKeyPress42" type="Sprite2D" parent="KeyPress"]
+modulate = Color(1, 1, 1, 0.388235)
+z_index = 2
+position = Vector2(-395, 61)
+scale = Vector2(3.25, 8.9375)
+texture = ExtResource("4_qw5af")
+
+[node name="WhiteKeyPress43" type="Sprite2D" parent="KeyPress"]
+modulate = Color(1, 1, 1, 0.388235)
+position = Vector2(-371, 100)
+scale = Vector2(4.40625, 13.4688)
+texture = ExtResource("4_qw5af")
+
+[node name="WhiteKeyPress44" type="Sprite2D" parent="KeyPress"]
+modulate = Color(1, 1, 1, 0.388235)
+z_index = 2
+position = Vector2(-353, 61)
+scale = Vector2(3.25, 8.9375)
+texture = ExtResource("4_qw5af")
+
+[node name="WhiteKeyPress45" type="Sprite2D" parent="KeyPress"]
+modulate = Color(1, 1, 1, 0.388235)
+position = Vector2(-334, 100)
+scale = Vector2(4.40625, 13.4688)
+texture = ExtResource("4_qw5af")
+
+[node name="WhiteKeyPress46" type="Sprite2D" parent="KeyPress"]
+modulate = Color(1, 1, 1, 0.388235)
+z_index = 2
+position = Vector2(-311, 61)
+scale = Vector2(3.25, 8.9375)
+texture = ExtResource("4_qw5af")
+
+[node name="WhiteKeyPress47" type="Sprite2D" parent="KeyPress"]
+modulate = Color(1, 1, 1, 0.388235)
+position = Vector2(-298, 100)
+scale = Vector2(4.40625, 13.4688)
+texture = ExtResource("4_qw5af")
+
+[node name="WhiteKeyPress48" type="Sprite2D" parent="KeyPress"]
+modulate = Color(1, 1, 1, 0.388235)
+position = Vector2(-261.375, 100)
+scale = Vector2(4.40625, 13.4688)
+texture = ExtResource("4_qw5af")
+
+[node name="WhiteKeyPress49" type="Sprite2D" parent="KeyPress"]
+modulate = Color(1, 1, 1, 0.388235)
+z_index = 2
+position = Vector2(-247.75, 61)
+scale = Vector2(3.25, 8.9375)
+texture = ExtResource("4_qw5af")
+
+[node name="WhiteKeyPress50" type="Sprite2D" parent="KeyPress"]
+modulate = Color(1, 1, 1, 0.388235)
+position = Vector2(-225.75, 100)
+scale = Vector2(4.40625, 13.4688)
+texture = ExtResource("4_qw5af")
+
+[node name="WhiteKeyPress51" type="Sprite2D" parent="KeyPress"]
+modulate = Color(1, 1, 1, 0.388235)
+z_index = 2
+position = Vector2(-201.75, 61)
+scale = Vector2(3.25, 8.9375)
+texture = ExtResource("4_qw5af")
+
+[node name="WhiteKeyPress52" type="Sprite2D" parent="KeyPress"]
+modulate = Color(1, 1, 1, 0.388235)
+position = Vector2(-188.75, 100)
+scale = Vector2(4.40625, 13.4688)
+texture = ExtResource("4_qw5af")
+
+[node name="WhiteKeyPress53" type="Sprite2D" parent="KeyPress"]
+modulate = Color(1, 1, 1, 0.388235)
+position = Vector2(-151.75, 100)
+scale = Vector2(4.40625, 13.4688)
+texture = ExtResource("4_qw5af")
+
+[node name="WhiteKeyPress54" type="Sprite2D" parent="KeyPress"]
+modulate = Color(1, 1, 1, 0.388235)
+z_index = 2
+position = Vector2(-137.75, 61)
+scale = Vector2(3.25, 8.9375)
+texture = ExtResource("4_qw5af")
+
+[node name="WhiteKeyPress55" type="Sprite2D" parent="KeyPress"]
+modulate = Color(1, 1, 1, 0.388235)
+position = Vector2(-113.75, 100)
+scale = Vector2(4.40625, 13.4688)
+texture = ExtResource("4_qw5af")
+
+[node name="WhiteKeyPress56" type="Sprite2D" parent="KeyPress"]
+modulate = Color(1, 1, 1, 0.388235)
+z_index = 2
+position = Vector2(-95.75, 61)
+scale = Vector2(3.25, 8.9375)
+texture = ExtResource("4_qw5af")
+
+[node name="WhiteKeyPress57" type="Sprite2D" parent="KeyPress"]
+modulate = Color(1, 1, 1, 0.388235)
+position = Vector2(-76.75, 100)
+scale = Vector2(4.40625, 13.4688)
+texture = ExtResource("4_qw5af")
+
+[node name="WhiteKeyPress58" type="Sprite2D" parent="KeyPress"]
+modulate = Color(1, 1, 1, 0.388235)
+z_index = 2
+position = Vector2(-53.75, 61)
+scale = Vector2(3.25, 8.9375)
+texture = ExtResource("4_qw5af")
+
+[node name="WhiteKeyPress59" type="Sprite2D" parent="KeyPress"]
+modulate = Color(1, 1, 1, 0.388235)
+position = Vector2(-40.75, 100)
+scale = Vector2(4.40625, 13.4688)
+texture = ExtResource("4_qw5af")
+
+[node name="WhiteKeyPress60" type="Sprite2D" parent="KeyPress"]
+modulate = Color(1, 1, 1, 0.388235)
+position = Vector2(-2.37499, 99.5)
+scale = Vector2(4.40625, 13.4688)
+texture = ExtResource("4_qw5af")
+
+[node name="WhiteKeyPress61" type="Sprite2D" parent="KeyPress"]
+modulate = Color(1, 1, 1, 0.388235)
+z_index = 2
+position = Vector2(11.25, 60.5)
+scale = Vector2(3.25, 8.9375)
+texture = ExtResource("4_qw5af")
+
+[node name="WhiteKeyPress62" type="Sprite2D" parent="KeyPress"]
+modulate = Color(1, 1, 1, 0.388235)
+position = Vector2(33.25, 99.5)
+scale = Vector2(4.40625, 13.4688)
+texture = ExtResource("4_qw5af")
+
+[node name="WhiteKeyPress63" type="Sprite2D" parent="KeyPress"]
+modulate = Color(1, 1, 1, 0.388235)
+z_index = 2
+position = Vector2(57.25, 60.5)
+scale = Vector2(3.25, 8.9375)
+texture = ExtResource("4_qw5af")
+
+[node name="WhiteKeyPress64" type="Sprite2D" parent="KeyPress"]
+modulate = Color(1, 1, 1, 0.388235)
+position = Vector2(70.25, 99.5)
+scale = Vector2(4.40625, 13.4688)
+texture = ExtResource("4_qw5af")
+
+[node name="WhiteKeyPress65" type="Sprite2D" parent="KeyPress"]
+modulate = Color(1, 1, 1, 0.388235)
+position = Vector2(107.25, 99.5)
+scale = Vector2(4.40625, 13.4688)
+texture = ExtResource("4_qw5af")
+
+[node name="WhiteKeyPress66" type="Sprite2D" parent="KeyPress"]
+modulate = Color(1, 1, 1, 0.388235)
+z_index = 2
+position = Vector2(121.25, 60.5)
+scale = Vector2(3.25, 8.9375)
+texture = ExtResource("4_qw5af")
+
+[node name="WhiteKeyPress67" type="Sprite2D" parent="KeyPress"]
+modulate = Color(1, 1, 1, 0.388235)
+position = Vector2(145.25, 99.5)
+scale = Vector2(4.40625, 13.4688)
+texture = ExtResource("4_qw5af")
+
+[node name="WhiteKeyPress68" type="Sprite2D" parent="KeyPress"]
+modulate = Color(1, 1, 1, 0.388235)
+z_index = 2
+position = Vector2(163.25, 60.5)
+scale = Vector2(3.25, 8.9375)
+texture = ExtResource("4_qw5af")
+
+[node name="WhiteKeyPress69" type="Sprite2D" parent="KeyPress"]
+modulate = Color(1, 1, 1, 0.388235)
+position = Vector2(182.25, 99.5)
+scale = Vector2(4.40625, 13.4688)
+texture = ExtResource("4_qw5af")
+
+[node name="WhiteKeyPress70" type="Sprite2D" parent="KeyPress"]
+modulate = Color(1, 1, 1, 0.388235)
+z_index = 2
+position = Vector2(205.25, 60.5)
+scale = Vector2(3.25, 8.9375)
+texture = ExtResource("4_qw5af")
+
+[node name="WhiteKeyPress71" type="Sprite2D" parent="KeyPress"]
+modulate = Color(1, 1, 1, 0.388235)
+position = Vector2(218.25, 99.5)
+scale = Vector2(4.40625, 13.4688)
+texture = ExtResource("4_qw5af")
+
+[node name="WhiteKeyPress72" type="Sprite2D" parent="KeyPress"]
+modulate = Color(1, 1, 1, 0.388235)
+position = Vector2(254.875, 99.5)
+scale = Vector2(4.40625, 13.4688)
+texture = ExtResource("4_qw5af")
+
+[node name="WhiteKeyPress73" type="Sprite2D" parent="KeyPress"]
+modulate = Color(1, 1, 1, 0.388235)
+z_index = 2
+position = Vector2(268.5, 60.5)
+scale = Vector2(3.25, 8.9375)
+texture = ExtResource("4_qw5af")
+
+[node name="WhiteKeyPress74" type="Sprite2D" parent="KeyPress"]
+modulate = Color(1, 1, 1, 0.388235)
+position = Vector2(290.5, 99.5)
+scale = Vector2(4.40625, 13.4688)
+texture = ExtResource("4_qw5af")
+
+[node name="WhiteKeyPress75" type="Sprite2D" parent="KeyPress"]
+modulate = Color(1, 1, 1, 0.388235)
+z_index = 2
+position = Vector2(314.5, 60.5)
+scale = Vector2(3.25, 8.9375)
+texture = ExtResource("4_qw5af")
+
+[node name="WhiteKeyPress76" type="Sprite2D" parent="KeyPress"]
+modulate = Color(1, 1, 1, 0.388235)
+position = Vector2(327.5, 99.5)
+scale = Vector2(4.40625, 13.4688)
+texture = ExtResource("4_qw5af")
+
+[node name="WhiteKeyPress77" type="Sprite2D" parent="KeyPress"]
+modulate = Color(1, 1, 1, 0.388235)
+position = Vector2(364.5, 99.5)
+scale = Vector2(4.40625, 13.4688)
+texture = ExtResource("4_qw5af")
+
+[node name="WhiteKeyPress78" type="Sprite2D" parent="KeyPress"]
+modulate = Color(1, 1, 1, 0.388235)
+z_index = 2
+position = Vector2(378.5, 60.5)
+scale = Vector2(3.25, 8.9375)
+texture = ExtResource("4_qw5af")
+
+[node name="WhiteKeyPress79" type="Sprite2D" parent="KeyPress"]
+modulate = Color(1, 1, 1, 0.388235)
+position = Vector2(402.5, 99.5)
+scale = Vector2(4.40625, 13.4688)
+texture = ExtResource("4_qw5af")
+
+[node name="WhiteKeyPress80" type="Sprite2D" parent="KeyPress"]
+modulate = Color(1, 1, 1, 0.388235)
+z_index = 2
+position = Vector2(420.5, 60.5)
+scale = Vector2(3.25, 8.9375)
+texture = ExtResource("4_qw5af")
+
+[node name="WhiteKeyPress81" type="Sprite2D" parent="KeyPress"]
+modulate = Color(1, 1, 1, 0.388235)
+position = Vector2(439.5, 99.5)
+scale = Vector2(4.40625, 13.4688)
+texture = ExtResource("4_qw5af")
+
+[node name="WhiteKeyPress82" type="Sprite2D" parent="KeyPress"]
+modulate = Color(1, 1, 1, 0.388235)
+z_index = 2
+position = Vector2(462.5, 60.5)
+scale = Vector2(3.25, 8.9375)
+texture = ExtResource("4_qw5af")
+
+[node name="WhiteKeyPress83" type="Sprite2D" parent="KeyPress"]
+modulate = Color(1, 1, 1, 0.388235)
+position = Vector2(475.5, 99.5)
+scale = Vector2(4.40625, 13.4688)
+texture = ExtResource("4_qw5af")
+
+[node name="WhiteKeyPress84" type="Sprite2D" parent="KeyPress"]
+modulate = Color(1, 1, 1, 0.388235)
+position = Vector2(512, 100)
+scale = Vector2(4.40625, 13.4688)
+texture = ExtResource("4_qw5af")
+
+[node name="Background" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(49, -188)
+scale = Vector2(1.41121, 1.3756)
+texture = ExtResource("6_1homj")
