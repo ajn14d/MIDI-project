@@ -465,3 +465,22 @@ z_index = -1
 position = Vector2(49, -188)
 scale = Vector2(1.41121, 1.3756)
 texture = ExtResource("6_1homj")
+
+[node name="WhiteKeyNotes" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
+z_index = 5
+offset_left = -525.0
+offset_top = 174.0
+offset_right = 310.0
+offset_bottom = 197.0
+text = "C      D       E       F      G      A       B      C      D       E       F      G      A      B       C      D       E       F      G      A       B      C      D       E       F      G      A      B      C"
+
+[node name="BlackKeyNotes" type="Label" parent="."]
+z_index = 5
+offset_left = -516.0
+offset_top = 68.0
+offset_right = 474.0
+offset_bottom = 105.0
+theme_override_font_sizes/font_size = 11
+text = " Db           Eb                  Gb          Ab         Bb                 Db           Eb                  Gb          Ab         Bb                  Db           Eb                  Gb          Ab         Bb                 Db           Eb                  Gb          Ab         Bb    
+ C#           D#                  F#          G#         A#                 C#           D#                  F#          G#         A#                 C#           D#                  F#          G#         A#                 C#           D#                  F#          G#         A#"
